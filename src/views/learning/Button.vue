@@ -6,6 +6,8 @@
     <h1>{{ company }}</h1>
     <h1>{{ obj.taobao }}</h1>
     <button @click="btn">this is a button</button>
+    <li></li>
+    <button @click="bBack">back</button>
   </div>
 </template>
 
@@ -23,6 +25,11 @@ import {ref} from 'vue'
     name.value='ttttttt'
     obj.value.taobao = 'ttttttt'
     obj2.age=20
+  }
+
+  function bBack(){
+    name.value = '1111'
+    obj.value.taobao = "淘宝"
   }
 
 </script>
